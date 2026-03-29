@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sai Web Solution | Affordable Website Design</title>
+    <meta name="description" content="I build simple, fast, and modern websites for students, small businesses, and personal use. Affordable and clean designs.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container nav-content">
+            <a href="#" class="logo">
+                <span class="logo-icon">✨</span><span class="logo-text">Sai Web Solution</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact" class="btn btn-primary btn-sm btn-nav">Get Started</a></li>
+                <li>
+                    <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Dark Mode">
+                        <span class="icon-sun">☀️</span>
+                        <span class="icon-moon hidden">🌙</span>
+                    </button>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header / Hero Section -->
+    <header class="hero" id="home">
+        <div class="hero-bg-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+        </div>
+        <div class="container hero-content text-center animate fade-in-up">
+            <span class="pill-badge">Available for Work 🚀</span>
+            <h1 class="hero-title">Affordable Website Design <br><span class="text-gradient">for Everyone.</span></h1>
+            <p class="hero-subtitle">I build simple, fast, and modern websites for students, small businesses, and personal use.</p>
+            <div class="hero-buttons">
+                <a href="#contact" class="btn btn-primary btn-lg">Get Your Website</a>
+                <a href="#portfolio" class="btn btn-secondary btn-lg">View My Work</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section class="section bg-card" id="about">
+        <div class="container text-center animate fade-in-up">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-card glassmorphism">
+                <div class="about-text">
+                    <p class="lead">Hi, I'm a passionate developer building the web, one clean website at a time.</p>
+                    <p>I am a B.Tech IT student passionate about web development. I create clean and functional websites using HTML, CSS, and JavaScript. My goal is to help individuals and small businesses establish a beautiful online presence without breaking the bank.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="section" id="services">
+        <div class="container animate fade-in-up">
+            <h2 class="section-title text-center">My Services</h2>
+            <div class="grid services-grid">
+                <!-- Single Page -->
+                <div class="card service-card">
+                    <div class="card-icon-wrapper">
+                        <div class="card-icon text-gradient">📄</div>
+                    </div>
+                    <h3>Single Page Website</h3>
+                    <div class="price">₹1000</div>
+                    <p>Simple one-page website with basic design and content. Perfect for a quick digital footprint, personal profile, or landing page.</p>
+                    <ul class="service-features">
+                        <li>Responsive Design</li>
+                        <li>Contact Form</li>
+                        <li>1 Week Delivery</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-outline btn-block mt-3">Choose Plan</a>
+                </div>
+                <!-- Multi Page -->
+                <div class="card service-card focus">
+                    <div class="popular-badge">Most Popular</div>
+                    <div class="card-icon-wrapper">
+                        <div class="card-icon text-gradient">📑</div>
+                    </div>
+                    <h3>Multi-Page Website</h3>
+                    <div class="price">₹1500–₹2000</div>
+                    <p>Website with multiple pages like Home, About, Contact, etc. Ideal for businesses or portfolios needing detailed information.</p>
+                    <ul class="service-features">
+                        <li>3 - 5 Pages</li>
+                        <li>Advanced UI/UX</li>
+                        <li>Basic SEO Setup</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-primary btn-block mt-3">Choose Plan</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Calculator Section -->
+    <section class="section bg-card" id="pricing-calculator">
+        <div class="container animate fade-in-up">
+            <h2 class="section-title text-center">Estimate Your Cost</h2>
+            <p class="text-center section-subtitle">Get an instant quote tailored to your exact needs with our interactive pricing calculator.</p>
+            <div class="calculator-wrapper glassmorphism">
+                <div class="calculator-form">
+                    <div class="calc-group">
+                        <label for="page-count">Number of Pages</label>
+                        <input type="range" id="page-count" min="1" max="15" value="1" class="calc-slider">
+                        <div class="slider-value"><span id="page-display">1</span> Page(s)</div>
+                    </div>
+                    <div class="calc-options">
+                        <label class="checkbox-container">
+                            <input type="checkbox" id="calc-seo" value="1000">
+                            <span class="checkmark"></span>
+                            Basic SEO Setup (+₹<span class="cost-val">1000</span>)
+                        </label>
+                        <label class="checkbox-container">
+                            <input type="checkbox" id="calc-cms" value="2000">
+                            <span class="checkmark"></span>
+                            Content Management System (+₹<span class="cost-val">2000</span>)
+                        </label>
+                        <label class="checkbox-container">
+                            <input type="checkbox" id="calc-ecommerce" value="5000">
+                            <span class="checkmark"></span>
+                            E-Commerce Functionality (+₹<span class="cost-val">5000</span>)
+                        </label>
+                    </div>
+                </div>
+                <div class="calculator-result">
+                    <h3>Estimated Total</h3>
+                    <div class="total-price text-gradient">₹<span id="total-cost">1000</span></div>
+                    <p class="text-muted">Base price includes responsive design, contact form, and premium support.</p>
+                    <a href="#contact" class="btn btn-primary btn-block mt-3" id="book-calculator-btn">Book This Plan</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="section" id="features">
+        <div class="container animate fade-in-up">
+            <h2 class="section-title text-center">Why Choose Me?</h2>
+            <div class="grid features-grid">
+                <div class="feature-item">
+                    <div class="feature-icon">📱</div>
+                    <h4>Mobile Responsive</h4>
+                    <p>Looks great on phones, tablets, and desktops. Fluid layouts.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">⚡</div>
+                    <h4>Fast Loading</h4>
+                    <p>Optimized code and assets for lightning-fast page loads.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">🔍</div>
+                    <h4>Basic SEO Setup</h4>
+                    <p>Built to be friendly for search engines to help you rank.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">✨</div>
+                    <h4>Clean UI</h4>
+                    <p>Modern, minimal, and premium aesthetic design patterns.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="section bg-card" id="portfolio">
+        <div class="container animate fade-in-up">
+            <h2 class="section-title text-center">Recent Work</h2>
+            <p class="text-center section-subtitle">Take a look at some mockup samples of the quality you can expect.</p>
+            <div class="grid portfolio-grid">
+                <a href="file:///C:/Users/saivi/OneDrive/Desktop/html-youtube-tutorial-main/Event%20Management%20HTML%20Project/starter/event%20sai%201st%20project.html" target="_blank" class="portfolio-item">
+                    <img src="assets/event-preview.png" alt="Event Management Project Mockup" loading="lazy">
+                    <div class="portfolio-overlay">
+                        <div class="overlay-content">
+                            <h5>Upcoming Events Dashboard</h5>
+                            <p>Event Management App</p>
+                        </div>
+                    </div>
+                </a>
+
+                <div class="portfolio-item empty-placeholder" style="display: flex; align-items: center; justify-content: center; background: var(--glass-bg); border: 2px dashed var(--glass-border); text-align: center; padding: 4rem 2rem; min-height: 300px;">
+                    <div>
+                        <div style="font-size: 3rem; margin-bottom: 1rem;">🚀</div>
+                        <h4 style="color: var(--text-main);">More Projects Soon</h4>
+                        <p class="text-muted" style="color: var(--text-muted);">I will be adding more real projects here very soon!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="section" id="testimonials">
+        <div class="container animate fade-in-up">
+            <h2 class="section-title text-center">What Clients Say</h2>
+            <div class="grid testimonials-grid">
+                <!-- Feedback Column Placeholder -->
+                <div class="testimonial-card glassmorphism empty-feedback" style="border: 2px dashed var(--glass-border); display: flex; align-items: center; justify-content: center; text-align: center; padding: 4rem 2rem; min-height: 250px;">
+                    <div>
+                        <div style="font-size: 3rem; margin-bottom: 1rem;">📝</div>
+                        <h4 style="color: var(--text-main);">Client Feedback Placeholder</h4>
+                        <p class="text-muted" style="color: var(--text-muted);">Real client reviews and feedback will be showcased in this column soon.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section bg-card" id="faq">
+        <div class="container animate fade-in-up">
+            <h2 class="section-title text-center">Frequent Questions</h2>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <button class="faq-question">What is your typical turnaround time? <span class="faq-icon">+</span></button>
+                    <div class="faq-answer">
+                        <p>For a standard single-page website, my turnaround time is usually 3-5 days. Multi-page websites typically take 1-2 weeks depending on the complexity and how quickly you can provide the content.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">Do you provide domain registration and hosting? <span class="faq-icon">+</span></button>
+                    <div class="faq-answer">
+                        <p>Yes, I can assist you with setting up your domain and hosting. I usually recommend cost-effective hosting platforms that fit your budget.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">Will my website be mobile-friendly? <span class="faq-icon">+</span></button>
+                    <div class="faq-answer">
+                        <p>Absolutely! All the websites I build are fully responsive, meaning they will look great and function perfectly on smartphones, tablets, and desktop computers.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section bg-dark text-white" id="contact">
+        <div class="container animate fade-in-up">
+            <h2 class="section-title text-center text-white">Let's Work Together</h2>
+            <p class="text-center section-subtitle text-light-opacity">Ready to get your website? Send me a message!</p>
+            <div class="contact-wrapper glass-dark">
+                <div class="contact-info">
+                    <h3>Get in Touch</h3>
+                    <p>I'm currently taking on new projects. Fill out the form or reach out directly, and I'll get back to you within 24 hours.</p>
+                    <div class="contact-methods mt-4">
+                        <div class="method">
+                            <span class="icon">📧</span>
+                            <a href="mailto:saivijay1427@gmail.com" class="text-white">saivijay1427@gmail.com</a>
+                        </div>
+                        <div class="method mt-2">
+                            <span class="icon">💬</span>
+                            <a href="https://wa.me/6383888298" class="text-white">WhatsApp: 6383888298</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form-container">
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required placeholder="Your Name">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required placeholder="your.email@example.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="4" required placeholder="What kind of website are you looking for?"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+                    </form>
+                    <div id="formSuccess" class="form-success hidden">
+                        <p>✨ Thanks for your message! I'll be in touch soon.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container text-center">
+            <div class="footer-logo">
+                <span class="logo-icon">✨</span><span class="logo-text">SWS</span>
+            </div>
+            <p>&copy; 2026 Sai Web Solution | Built by A Passionate B.Tech Student</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
